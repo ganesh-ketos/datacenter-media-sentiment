@@ -96,7 +96,7 @@ def chart_aligned(vol, tone):
     style(ax)
     ax.set_xlabel("Months since coverage boom began", fontsize=10)
     ax.set_ylabel("Change in press tone since boom began", fontsize=10)
-    ax.set_title("After the boom, how fast does the press turn?",
+    ax.set_title("After the boom: how quickly coverage tone changed",
                  fontsize=14, color=INK, loc="left", pad=14)
     fig.text(0.01, 0.015,
              "GDELT average tone of headline coverage, 6-month rolling mean, "
@@ -157,9 +157,9 @@ def chart_time_to_flip(vol, tone):
                     fontweight="bold" if hl else "normal")
     ax.set_yticks([])
     style(ax)
-    ax.set_xlabel("Months from goodwill peak to sustained net-negative press",
+    ax.set_xlabel("Months from peak coverage tone to sustained net-negative tone",
                   fontsize=10)
-    ax.set_title("How long each technology held onto its good press",
+    ax.set_title("How long each technology sustained net-positive coverage",
                  fontsize=14, color=INK, loc="left", pad=14)
     fig.text(0.01, 0.015,
              "GDELT tone of headline coverage, 3-month smoothed. Goodwill peak = "
