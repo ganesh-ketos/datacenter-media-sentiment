@@ -1,3 +1,14 @@
 Fetching titles for 11021 candidate urls...
   1000/11021 fetched
   2000/11021 fetched
+  3000/11021 fetched
+  4000/11021 fetched
+  5000/11021 fetched
+  6000/11021 fetched
+  7000/11021 fetched
+  8000/11021 fetched
+  9000/11021 fetched
+  10000/11021 fetched
+  11000/11021 fetched
+Wrote 9187 rows -> /Users/gkh/datacenter-media-sentiment/data/raw/comparison_sample.csv
+topic-quarters under target (40): 1

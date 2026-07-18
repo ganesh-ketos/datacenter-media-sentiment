@@ -220,13 +220,15 @@ def chart_sentiment(vol_rows):
               ("theme_community_opposition", "Community opposition", RED),
               ("theme_investment_buildout", "Investment & buildout", YELLOW)]
     fig, ax = plt.subplots(figsize=(10, 5.5))
+    label_nudge = {"Investment & buildout": 8, "Community opposition": -8}
     for key, label, color in themes:
         vals = [100 * float(r[key]) for r in rows]
         # 3-month centered rolling mean to reduce sample noise
         smooth = [sum(vals[max(0, i - 1):i + 2]) / len(vals[max(0, i - 1):i + 2])
                   for i in range(len(vals))]
         ax.plot(months, smooth, color=color, linewidth=2, label=label)
-        ax.annotate(label, xy=(months[-1], smooth[-1]), xytext=(6, 0),
+        ax.annotate(label, xy=(months[-1], smooth[-1]),
+                    xytext=(6, label_nudge.get(label, 0)),
                     textcoords="offset points", fontsize=8.5, color=color,
                     va="center")
     style_axes(ax)
@@ -237,7 +239,8 @@ def chart_sentiment(vol_rows):
     fig.subplots_adjust(right=0.82)
     fig.text(0.01, 0.015,
              "Theme of each sampled headline, LLM-classified. Four most dynamic themes shown; "
-             "investment/buildout, tech/operations, policy and other omitted lines sum to 100%.",
+             "jobs/economy, policy/regulation, tech/operations, and other are omitted "
+             "(all themes sum to 100%).",
              fontsize=7.5, color=MUTED)
     fig.savefig(CHARTS / "06_theme_mix.png", bbox_inches="tight")
     plt.close(fig)
