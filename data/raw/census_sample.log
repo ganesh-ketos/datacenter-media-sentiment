@@ -1,0 +1,23 @@
+Fetching titles for 9720 candidate urls...
+  500/9720 fetched
+  1000/9720 fetched
+  1500/9720 fetched
+  2000/9720 fetched
+  2500/9720 fetched
+  3000/9720 fetched
+  3500/9720 fetched
+  4000/9720 fetched
+  4500/9720 fetched
+  5000/9720 fetched
+  5500/9720 fetched
+  6000/9720 fetched
+  6500/9720 fetched
+  7000/9720 fetched
+  7500/9720 fetched
+  8000/9720 fetched
+  8500/9720 fetched
+  9000/9720 fetched
+  9500/9720 fetched
+
+Wrote 8100 rows -> /Users/gkh/datacenter-media-sentiment/data/raw/census_sample.csv
+titles: 5813 live, 2287 slug-derived, 43 unusable/skipped

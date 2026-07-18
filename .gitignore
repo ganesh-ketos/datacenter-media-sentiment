@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+.DS_Store
+data/raw/fetch_headlines.log
+data/raw/headlines_progress.txt
