@@ -164,7 +164,9 @@ def chart_time_to_flip(vol, tone):
     fig.text(0.01, 0.015,
              "GDELT tone of headline coverage, 3-month smoothed. Goodwill peak = "
              "highest tone in the 2 years before each technology's steepest decline. "
-             "Turned = 2 consecutive months below zero. Data through June 2026.",
+             "Turned = 2 consecutive months below zero. Data through June 2026. "
+             "Crypto mining's figures reflect its niche-coverage era (<500 articles/month) "
+             "and should be read with caution.",
              fontsize=7.5, color=MUTED)
     fig.tight_layout(rect=(0, 0.04, 1, 1))
     fig.savefig(ROOT / "charts/09_time_to_flip.png", bbox_inches="tight")
