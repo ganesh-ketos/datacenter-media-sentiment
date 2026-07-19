@@ -6,11 +6,6 @@ classification). All datasets validated; the publication drafting phase has not 
 
 ## Open
 
-### Analyses
-- [ ] Local-vs-national diffusion lag (paper section 3) — bucket domains into local
-      TV/newspaper vs trade vs national; test whether local negativity leads national
-      by months. Data ready in census_classified.csv + comparison files.
-
 ### Publications (task list #9)
 - [ ] arXiv paper draft — target physics.soc-ph (Ganesh has cond-mat arXiv standing;
       may need one endorsement; SSRN fallback). Neutral framing rule (see memory:
@@ -38,6 +33,21 @@ classification). All datasets validated; the publication drafting phase has not 
 - [ ] User actions: push repo to GitHub; insert repo URL into LINKEDIN_DRAFT.md.
 
 ## Done
+- [x] Local-vs-national diffusion lag (2026-07-19) — scripts/classify_domains.py
+      (API path) + Sonnet-fleet run (parts_domains/) -> domain_types.csv (1,979
+      domains, 5 outlet types, rubric in classification/domain_rubric.md; QC 92.9%
+      overall, 100% on local-vs-not); scripts/diffusion_lag.py -> diffusion_
+      {monthly,quarterly}.csv + chart 12. FINDINGS (paper sec 3 must be reframed):
+      NO lead-lag detected — local/national negative shares peak at lag 0 (r=0.74
+      quarterly p<0.01, r=0.68 monthly, symmetric decay), so "local leads national
+      by months" is NOT supported at monthly resolution. The real finding is LEVELS:
+      local runs ~13pp more negative throughout (mean 30.8% vs 18.0%; 2026-Q2 52.2%
+      vs 31.5%) and is the ONLY outlet class to flip sustained net-negative
+      (2025-Q3; national and trade never flip through 2026-Q2). Early-warning story
+      for blog: watch local levels, not timing. Buckets n: local 1,980 / national
+      1,434 / trade 2,387 relevant rows; wire_pr (1,716) excluded — fleet caught
+      locality-named PR-syndication sites (malaysiasun.com etc.) via duplicate
+      headlines.
 - [x] Water-coverage deep dive (2026-07-19) — scripts/water_deep_dive.py; outputs
       data/processed/water_deep_dive_{monthly,quarterly}.csv, charts 10 (water vs
       energy) + 11 (backlash theme ranking). Headline findings for whitepaper/blog:
