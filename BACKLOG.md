@@ -7,13 +7,6 @@ classification). All datasets validated; the publication drafting phase has not 
 ## Open
 
 ### Analyses
-- [ ] Water-coverage deep dive — the KETOS-strategic cut, NOT YET DONE. Track the
-      environment_water theme plus "water" keyword frequency in datacenter headlines
-      over time (data: data/processed/census_classified.csv theme column +
-      data/raw/bigquery_census.csv title/url text). Question: when did water become a
-      mainstream datacenter issue, how fast is it growing vs energy, and where does it
-      rank among mitigable backlash themes. Feeds whitepaper's "implications for
-      developers" section and one blog post. Ganesh explicitly wants this angle.
 - [ ] Local-vs-national diffusion lag (paper section 3) — bucket domains into local
       TV/newspaper vs trade vs national; test whether local negativity leads national
       by months. Data ready in census_classified.csv + comparison files.
@@ -45,6 +38,15 @@ classification). All datasets validated; the publication drafting phase has not 
 - [ ] User actions: push repo to GitHub; insert repo URL into LINKEDIN_DRAFT.md.
 
 ## Done
+- [x] Water-coverage deep dive (2026-07-19) — scripts/water_deep_dive.py; outputs
+      data/processed/water_deep_dive_{monthly,quarterly}.csv, charts 10 (water vs
+      energy) + 11 (backlash theme ranking). Headline findings for whitepaper/blog:
+      water keyword mentions grew 2.4x (1.4% -> 3.2% of census, 2022-23 vs 2025-H1'26),
+      slightly faster than energy keywords (2.1x) but from ~5x smaller base; water
+      THEME share flat (~5-6%, single-label crowding by energy_grid which grew 2.5x
+      to 16.8%); water = #3 negative-coverage theme both periods (behind community
+      opposition, energy); water theme crossed 5% sustained in 2022-Q3, never 10%. Slug-keyword proxy validated vs fetched titles: recall 0.95,
+      precision 0.83 (most "misses" are title-fetch failures, true precision higher).
 - [x] Datacenter volume census (335k fulltext / 103k headline-frame), verified vs API
 - [x] 8,100 datacenter headlines classified, QC'd (98.8/87.2/92.8, 0 pos<->neg flips)
 - [x] Six-technology comparison census (920k articles, 2015-2026, BigQuery)
