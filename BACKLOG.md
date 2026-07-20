@@ -39,7 +39,8 @@ classification). All datasets validated; the publication drafting phase has not 
       overall, 100% on local-vs-not); scripts/diffusion_lag.py -> diffusion_
       {monthly,quarterly}.csv + chart 12. FINDINGS (paper sec 3 must be reframed):
       NO lead-lag detected — local/national negative shares peak at lag 0 (r=0.74
-      quarterly p<0.01, r=0.68 monthly, symmetric decay), so "local leads national
+      quarterly, r=0.68 monthly; each beats every circular-shift null realization,
+      p<0.06 q / p<0.02 m at test resolution; symmetric decay), so "local leads national
       by months" is NOT supported at monthly resolution. The real finding is LEVELS:
       local runs ~13pp more negative throughout (mean 30.8% vs 18.0%; 2026-Q2 52.2%
       vs 31.5%) and is the ONLY outlet class to flip sustained net-negative
