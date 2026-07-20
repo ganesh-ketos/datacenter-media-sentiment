@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2026 Ganesh Hegde
+Copyright (c) 2026 Ganesh Hegde, KETOS Inc. (https://ketos.co)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -24,8 +24,18 @@ SOFTWARE.
 
 The code in this repository is licensed under the MIT License above.
 
-The datasets under data/ are derived from the GDELT Project
-(https://www.gdeltproject.org/) and are released under CC BY 4.0.
-GDELT data is used per the GDELT Project's terms of use, which permit
-redistribution with attribution. Please credit both this repository and
-the GDELT Project when reusing the data.
+The datasets under data/ and all findings, charts, and derived series are
+released under CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+
+Attribution requirement (per CC BY 4.0 Section 3(a), designated attribution
+parties): any use, reproduction, or derivative of the data, findings, or
+charts must credit KETOS (https://ketos.co), with a working link to
+https://ketos.co wherever the medium supports links, together with
+attribution to the GDELT Project (https://www.gdeltproject.org/), from
+which the underlying news metadata derive. GDELT data is used per the GDELT
+Project's terms of use, which permit redistribution with attribution.
+
+Suggested citation:
+KETOS (2026). Datacenter Media Sentiment: a two-frame GDELT study.
+https://ketos.co - data and code:
+https://github.com/ganesh-ketos/datacenter-media-sentiment

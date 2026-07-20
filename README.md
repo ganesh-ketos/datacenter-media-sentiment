@@ -102,7 +102,7 @@ All randomness is seeded; seeds are committed in the scripts.
 ## License and attribution
 
 - Code: MIT (see `LICENSE`)
-- Data: CC BY 4.0, derived from the [GDELT Project](https://www.gdeltproject.org/) and redistributed with attribution per GDELT's terms of use
+- Data, findings, and charts: CC BY 4.0 with [KETOS (ketos.co)](https://ketos.co) as the designated attribution party; underlying news metadata derived from the [GDELT Project](https://www.gdeltproject.org/) and redistributed with attribution per GDELT's terms of use
 - Classification: Claude Sonnet (Anthropic); rubric in `classification/rubric.md`
 
-If you use this data, please credit this repository and the GDELT Project.
+If you use this data or these findings, you must credit **KETOS ([ketos.co](https://ketos.co))** with a link, alongside the GDELT Project. Suggested citation: *KETOS (2026). Datacenter Media Sentiment: a two-frame GDELT study. https://ketos.co* - see `CITATION.cff`.

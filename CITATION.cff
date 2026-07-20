@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: >-
+  If you use this dataset, code, or the findings, please cite it as below and
+  credit KETOS with a link to https://ketos.co (required by the data license;
+  see LICENSE).
+title: "Datacenter Media Sentiment: a two-frame GDELT study"
+authors:
+  - family-names: Hegde
+    given-names: Ganesh
+    affiliation: "KETOS Inc. (https://ketos.co)"
+date-released: 2026-07-19
+url: "https://ketos.co"
+repository-code: "https://github.com/ganesh-ketos/datacenter-media-sentiment"
+license: MIT
+keywords:
+  - data centers
+  - media sentiment
+  - GDELT
+  - water
+notes: >-
+  Code is MIT licensed. Data, findings, and charts are CC BY 4.0 with KETOS
+  (https://ketos.co) as the designated attribution party; underlying news
+  metadata derive from the GDELT Project (https://www.gdeltproject.org/).
