@@ -61,10 +61,12 @@ def style_axes(ax):
     ax.tick_params(length=0)
 
 
-def annotate_chatgpt(ax, y_frac=0.94):
+def annotate_chatgpt(ax, y_frac=0.94, va="top"):
     ax.axvline(CHATGPT, color=INK_2, linewidth=1.2, linestyle=(0, (4, 3)))
-    ax.text(CHATGPT, ax.get_ylim()[1] * y_frac, "  ChatGPT launches\n  Nov 30, 2022",
-            color=INK_2, fontsize=9, va="top", ha="left")
+    y0, y1 = ax.get_ylim()
+    y = y0 + (y1 - y0) * y_frac
+    ax.text(y=y, x=CHATGPT, s="  ChatGPT launches\n  Nov 30, 2022",
+            color=INK_2, fontsize=9, va=va, ha="left")
 
 
 def load_volume():
@@ -179,7 +181,8 @@ def chart_sentiment(vol_rows):
     ax.plot(months, net, color=INK_2, linewidth=2)
     style_axes(ax)
     ax.yaxis.set_major_formatter(mticker.FuncFormatter(lambda v, _: f"{v:+.0f}pp"))
-    annotate_chatgpt(ax)
+    # label low: the region below zero is whitespace until 2026
+    annotate_chatgpt(ax, y_frac=0.04, va="bottom")
     ax.set_title("Net sentiment of data center headlines (% positive - % negative)",
                  fontsize=13, color=INK, loc="left", pad=14)
     fig.text(0.01, 0.015,

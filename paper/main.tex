@@ -88,8 +88,15 @@ can use.
 
 \subsection{Two GDELT frames}
 
-All raw data come from the GDELT Project \cite{leetaru2013}. We use two
-frames with different tradeoffs between recall and precision:
+All raw data come from the GDELT Project \cite{leetaru2013}, an open
+platform that monitors print and web news media worldwide in over 100
+languages and machine-codes each article it sees, extracting entities,
+locations, themes, and a lexicon-based tone score, on a 15-minute update
+cycle. We use two GDELT products: the DOC 2.0 API, which supports fulltext
+search over the monitored article stream, and the Global Knowledge Graph
+(GKG), which publishes per-article metadata including the article URL and
+tone score and is mirrored on Google BigQuery. From these we construct two
+sampling frames with different tradeoffs between recall and precision:
 
 \begin{itemize}
 \item \textbf{Fulltext frame.} All English-language articles matching
@@ -104,8 +111,8 @@ path): 103,341 unique articles over the same period. Requiring the term in
 the headline frame selects articles that are \emph{about} data centers.
 \end{itemize}
 
-The two frames agree well on volume dynamics (monthly volume correlation
-$r=0.93$), and the headline frame's share of the fulltext frame rose from
+The two frames agree well on volume dynamics (Pearson $r=0.93$ between the
+frames' monthly article volumes), and the headline frame's share of the fulltext frame rose from
 16\% in 2022 to 48\% in the first half of 2026: when data centers appear in
 coverage at all, they are increasingly the story rather than the backdrop.
 
@@ -165,7 +172,7 @@ correlations computed by the committed calibration script.
 
 \begin{table}[t]
 \centering
-\caption{Correlation between LLM net headline sentiment and
+\caption{Pearson correlation between LLM net headline sentiment and
 article-count-weighted GDELT tone. Quarterly aggregation; the data center
 series is also shown monthly.}
 \label{tab:calibration}
@@ -309,7 +316,8 @@ press: 27.8\%). Local outlets are also the only class whose net sentiment
 flipped sustainably negative (2025-Q3); national and trade net sentiment
 remained positive through 2026-Q2 (Figure~\ref{fig:outlets}).
 
-However, we find no evidence of a lead-lag: the cross-correlation between
+However, we find no evidence of a lead-lag: the Pearson cross-correlation
+between
 local and national negative shares peaks at lag zero ($r=0.74$ quarterly
 and $r=0.68$ monthly, in each case exceeding every realization of an
 exhaustive circular-shift null, i.e.\ $p<0.06$ quarterly and $p<0.02$
