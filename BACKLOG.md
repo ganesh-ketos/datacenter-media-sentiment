@@ -7,22 +7,22 @@ classification). All datasets validated; the publication drafting phase has not 
 ## Open
 
 ### Publications (task list #9)
-- [ ] arXiv paper draft — target physics.soc-ph (Ganesh has cond-mat arXiv standing;
-      may need one endorsement; SSRN fallback). Neutral framing rule (see memory:
-      feedback-neutral-framing). Spine: (1) two-frame GDELT method + LLM/tone
-      calibration (r=0.93 datacenter, 0.69 crypto, ~0.5 5G/wind; flat-regime caveat
-      for fracking), (2) datacenter flip (+54% 2022 -> -5% 2026, first net-negative
-      March 2026), (3) six-technology comparison: figs 08/09, datacenter = largest/
-      fastest sustained decline from first place; 5G/wind recovered in 3-4 months,
-      recovery window framing, (4) robustness: promo filter (crypto 2025 spike was
-      22% promotional content), crypto frame-drift-to-AI caveat, QC 98.8/87.2/92.8,
-      zero pos<->neg flips. Constructive close for infrastructure developers.
+- [ ] arXiv submission — draft COMPLETE at paper/main.tex (compiled main.pdf, 10 pp,
+      6 figs). Ganesh: review draft, then submit to physics.soc-ph (may need one
+      endorsement; SSRN fallback). Corrected claims vs original spine: calibration
+      r=0.92 quarterly datacenter (scripts/calibration.py, exact); 5G recovered in
+      4 mo, wind 2 mo; datacenter = largest decline FROM NET-POSITIVE BASELINE
+      (crypto raw drop larger from ~neutral); outlet section = levels not lag;
+      circular-shift p<0.06 q / p<0.02 m. Note-added section covers post-window
+      events (142 protests/42 states Jul 18; Reuters-Ipsos 14%/57% Jun 2026 poll;
+      NY hyperscale moratorium Jul 14) — all web-verified.
 - [ ] Whitepaper for KETOS site — paper content + explicit developer implications +
       water-stewardship positioning (uses the water deep-dive).
-- [ ] Blog series (4-5 posts): the flip / the benchmark / local early-warning /
-      water+energy themes / methods+open-data.
-- [ ] LinkedIn arc — hook post exists at LINKEDIN_DRAFT.md (gitignored; needs GitHub
-      link inserted); add benchmark post using charts 08/09; 10K-impression goal.
+- [ ] Blog series (4-5 posts): the flip / the benchmark / local early-warning
+      (reframe: levels not timing) / water+energy themes / methods+open-data.
+- [ ] LinkedIn arc — hook post ready at LINKEDIN_DRAFT.md (GitHub link inserted);
+      add benchmark post using charts 08/09; 10K-impression goal. BLOCKED on repo
+      going public (Ganesh action, see below).
 
 ### Polish
 - [ ] Chart 03: ChatGPT annotation collides with bars; footnote truncates on right.
@@ -30,7 +30,10 @@ classification). All datasets validated; the publication drafting phase has not 
       baseline year already contained early decline).
 - [ ] README: add comparison-study section (six-technology census, promo filter,
       calibration numbers); currently documents only the datacenter study.
-- [ ] User actions: push repo to GitHub; insert repo URL into LINKEDIN_DRAFT.md.
+- [ ] User action: flip https://github.com/ganesh-ketos/datacenter-media-sentiment
+      from private to public (Settings > General > Danger Zone) before posting the
+      LinkedIn hook or submitting to arXiv (paper's data-availability URL points
+      there). Pushed private 2026-07-19 at Ganesh's direction.
 
 ## Done
 - [x] Local-vs-national diffusion lag (2026-07-19) — scripts/classify_domains.py
