@@ -16,13 +16,20 @@ classification). All datasets validated; the publication drafting phase has not 
       circular-shift p<0.06 q / p<0.02 m. Note-added section covers post-window
       events (142 protests/42 states Jul 18; Reuters-Ipsos 14%/57% Jun 2026 poll;
       NY hyperscale moratorium Jul 14) — all web-verified.
-- [ ] Whitepaper for KETOS site — paper content + explicit developer implications +
-      water-stewardship positioning (uses the water deep-dive).
+- [ ] Whitepaper: content DONE (2026-07-20) — "The Data Center Backlash, Measured",
+      PDF + web markdown + source HTML in ~/Documents/Claude/Projects/KETOS
+      Marketing Copy/ (KETOS_Data_Center_Backlash_Whitepaper.pdf). REMAINING:
+      Ganesh review, then stage on ketos.co as draft resources_item per
+      ~/.claude/KETOS_misc/create-case-study.md (needs wp-admin login; upload PDF
+      to wp-content/downloads/, AC automation tag needed).
 - [ ] Blog series (4-5 posts): the flip / the benchmark / local early-warning
       (reframe: levels not timing) / water+energy themes / methods+open-data.
-- [ ] LinkedIn arc — hook post ready at LINKEDIN_DRAFT.md (GitHub link inserted,
-      repo now public — UNBLOCKED, post when ready); add benchmark post using
-      charts 08/09; 10K-impression goal.
+- [ ] LinkedIn arc — hook post ready (LINKEDIN_DRAFT.md); long-form article DONE
+      (2026-07-20) at LINKEDIN_ARTICLE.md + image kit in linkedin_kit/ (4 charts,
+      3 branded stat/quote cards, CREDITS.md; both gitignored). Ganesh: review +
+      post article, hook post as teaser. Before posting: recheck Wikimedia
+      Commons for CC protest photos per CREDITS.md. Benchmark post (charts 08/09)
+      still to write; 10K-impression goal.
 
 ### Polish
 - [ ] Chart 03: ChatGPT annotation collides with bars; footnote truncates on right.
