@@ -20,9 +20,9 @@ classification). All datasets validated; the publication drafting phase has not 
       water-stewardship positioning (uses the water deep-dive).
 - [ ] Blog series (4-5 posts): the flip / the benchmark / local early-warning
       (reframe: levels not timing) / water+energy themes / methods+open-data.
-- [ ] LinkedIn arc — hook post ready at LINKEDIN_DRAFT.md (GitHub link inserted);
-      add benchmark post using charts 08/09; 10K-impression goal. BLOCKED on repo
-      going public (Ganesh action, see below).
+- [ ] LinkedIn arc — hook post ready at LINKEDIN_DRAFT.md (GitHub link inserted,
+      repo now public — UNBLOCKED, post when ready); add benchmark post using
+      charts 08/09; 10K-impression goal.
 
 ### Polish
 - [ ] Chart 03: ChatGPT annotation collides with bars; footnote truncates on right.
@@ -30,10 +30,6 @@ classification). All datasets validated; the publication drafting phase has not 
       baseline year already contained early decline).
 - [ ] README: add comparison-study section (six-technology census, promo filter,
       calibration numbers); currently documents only the datacenter study.
-- [ ] User action: flip https://github.com/ganesh-ketos/datacenter-media-sentiment
-      from private to public (Settings > General > Danger Zone) before posting the
-      LinkedIn hook or submitting to arXiv (paper's data-availability URL points
-      there). Pushed private 2026-07-19 at Ganesh's direction.
 
 ## Done
 - [x] Local-vs-national diffusion lag (2026-07-19) — scripts/classify_domains.py
